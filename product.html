@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA</title>
+    <link href="/assest/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assest/css/all.min.css" rel="stylesheet">
+    <link href="/assest/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assest/noUiSlider-15.6.0/noUiSlider-15.6.0/dist/nouislider.min.css">
+    <script src="/assest/noUiSlider-15.6.0/noUiSlider-15.6.0/dist/nouislider.js"></script>
+    <link rel="stylesheet" href="./assest/OwlCarousel/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/OwlCarousel/owl.theme.default.min.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/themify-icons/themify-icons.css">
+    <link href="/assest/css/home.css" rel="stylesheet" >
+   
+    <script type="text/javascript" src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js" async=""></script>
+</head>
+<body class="mx-0"> 
+   
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 ">
+        <div class="container">
+            <a class="navbar-brand " href="#">    <img src="/assest/images/logo.webp" alt="logo"></a>
+            <button class="navbar-toggler " type="button" onclick="sideNavbar('open')">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav__list">
+                    <li class="nav-item nav__item active">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Shop</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="shop.html">Shop Category</a>
+                            <a class="dropdown-item" href="product.html">Product Details</a>
+                            <a class="dropdown-item" href="check-out.html">Product Checkout</a>
+                            <a class="dropdown-item" href="confirm.html">Confirmation</a>
+                            <a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Blog</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="blog.html">Blog</a>
+                            <a class="dropdown-item" href="blog-details.html">Blog Details</a>
+                        
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Pages</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="resigter.html">Register</a>
+                            <a class="dropdown-item" href="tracking.html">Tracking</a>
+                        
+                        </div>
+                    </div>
+
+                    <li class="nav-item nav__item ">
+                        <a class="nav-link " href="contect.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class=" navbar-nav nav__list-shop ml-auto ">
+                    <li class="nav-item nav__item  ">
+                        <button class="btn nav__shop-button ">
+                            <svg data-src="/assest/images/search.svg"></svg>
+                        </button>
+                    </li>
+                    <li class="nav-item nav__item mr-5 ">
+                        <a href="shoppingCart.html" class="btn nav__shop-button  nav__cart">
+                            <svg data-src="/assest/images/cart.svg" ></svg>
+                            <span class="nav__note-span" >3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav__item ">
+                        <button class="btn nav__buy-button">
+                            Buy Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-toggle navbar-toggle-js">
+            <div class="nav-side">
+                <div class="side__close " >
+                    <button onclick="sideNavbar('close')" class="btn side__close-button side__close-button-js  "><svg class="side__close__svg" data-src="/assest/images/x.svg"></svg></button>
+                </div>
+                <ul class="nav-side__icon-list pt-2">  
+                    <li class="">
+                        <button class="btn nav__shop-button ">
+                            <svg data-src="/assest/images/search.svg"></svg>
+                        </button>
+                    </li>
+                    <li class="">
+                        <a href="shoppingCart.html" class="btn nav__shop-button  nav__cart">
+                            <svg data-src="/assest/images/cart.svg" ></svg>
+                            <span class="nav__note-span" >3</span>
+                        </a>
+                    </li>
+                    
+            
+                </ul>
+                <ul class="nav-side__list pt-3">
+                    <li><a href="index.html" >Home</a></li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#shop"  role="button" >
+                            Shop
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="shop" >
+                            <li>  <a class="dropdown-item " href="shop.html">Shop Category</a> </li>
+                            <li> <a class="dropdown-item" href="product.html">Product Details</a></li>
+                            <li> <a class="dropdown-item" href="check-out.html">Product Checkout</a></li>
+                            <li> <a class="dropdown-item" href="confirm.html">Confirmation</a></li>
+                            <li> <a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a></li>
+                        </ul>
+                    </li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#blog"  role="button" >
+                            Blog
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="blog" >
+                            <li>  <a class="dropdown-item " href="blog.html">Blog</a> </li>
+                            <li> <a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#pages"  role="button" >
+                            Pages
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="pages" >
+                            <li>  <a class="dropdown-item " href="login.html">Login</a> </li>
+                            <li> <a class="dropdown-item" href="resigter.html">Register</a></li>
+                            <li> <a class="dropdown-item" href="tracking.html">Tracking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contect.html">contact</a></li>
+                </ul> 
+                <div class="text-center">
+                    <button class="btn nav__buy-button nav-side__button">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+            <div class="other-side" onclick="sideNavbar('close')">
+            </div>
+        </div>
+    </nav>
+    <section class="header-shop ">
+        <div class="header-shop__content">
+            <h2>Shop Single</h2>
+            <p>Home -Shop Single</p>
+        </div>
+    </section>
+    <section class="product-item mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-sm-12 ">
+                    <div class=" owl-carousel product-item__img-container owl-theme">
+                        <div class="item">
+                            <img class="img-fluid"  src="assest/images/product-item.webp">
+                        </div>
+                        <div class="item">
+                            <img class="img-fluid"  src="assest/images/product-item.webp">
+                        </div>
+                        <div class="item">
+                            <img class="img-fluid"  src="assest/images/product-item.webp">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-sm-10 px-sm-2">
+                    <div class="product-item-info mt-5">
+                        <h4>Faded SkyBlu Denim Jeans</h4>
+                        <h3>$149.99</h3>
+                        <p> Category  &nbsp; <span>&nbsp; : Household</span></p>
+                        <p> Availibility  &nbsp; <span>&nbsp; : In Stock</span></p>
+                    
+                        <p class="product-item-info__paragraph">Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.</p>
+                        
+                        <div class="product-quantity" >
+                            <h6>Quantity:</h6>
+                            <input  type="number">
+                            <button class="btn header__buy-button get-update__button ">Add to Card</button>
+                        </div>
+                        <ul class="mt-5 product-item-info__icons">
+                            <li><a><i class="fa-regular fa-gem"></i></a></li>
+                            <li><a><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="review mt-2">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-12 ">
+                    <div class="review__nav-buttons">
+                        <ul class="review__nav-button-list">
+                            <li><button >Description</button></li>
+                            <li><button >Specification</button></li>
+                            <li><button >Comments</button></li>
+                            <li><button >Reviews</button></li>
+                        </ul>
+                    </div>
+                    <div class="review__container">
+                        <div class="row">
+                            <div class="col-lg-6  ">
+                                <div class="d-flex">
+
+                                    <div class="over-all__div">
+                                        <h4>Overall</h4>
+                                        <h3>4.0</h3>
+                                        <span>(03 Reviews)</span>
+                                    </div>
+                                    <div class="all-rating">
+                                        <h5>Based on 3 Reviews</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="">5 Star  &nbsp;
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i> 
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    &nbsp; <span>01</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">4 Star  &nbsp;
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i> 
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    &nbsp; <span>01</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">3 Star  &nbsp;
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i> 
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    &nbsp;   <span>01</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">2 Star  &nbsp;
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i> 
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    &nbsp; <span>01</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">1 Star &nbsp;
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i> 
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    &nbsp;  <span>01</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="profile">
+                                    <div class="profile-container d-flex mt-5 ">
+                                        <div class="profile__img mr-3" ><img src="/assest/images/profile1.webp"></div>
+                                        <div class="profile__info mt-2 ">
+                                            <h6> Blake Ruiz</h6>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                </div>
+                                <div class="profile">
+                                    <div class="profile-container d-flex mt-5 ">
+                                        <div class="profile__img mr-3" ><img src="/assest/images/profile2.webp"></div>
+                                        <div class="profile__info mt-2 ">
+                                            <h6> Blake Ruiz</h6>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                </div>
+                                <div class="profile">
+                                    <div class="profile-container d-flex mt-5 ">
+                                        <div class="profile__img mr-3" ><img src="/assest/images/profile3.webp"></div>
+                                        <div class="profile__info mt-2 ">
+                                            <h6> Blake Ruiz</h6>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                </div>
+                            </div> 
+                            <div class="col-lg-6">
+                                <div class="rating-form">
+                                <h4>Add a Review</h4>
+                                <p>Your Rating: &nbsp;
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    &nbsp;  Outstanding
+                                </p>
+                                <div class="form-group row mt-3">
+                                    
+                                    <div class="col-sm-12 mb-2">
+                                        <input type="text" class="form-control rating-form_input" id="colFormLabel" placeholder="Enter your name">
+                                    </div>
+                                    <div class="col-sm-12  mb-2">
+                                        <input type="email" class="form-control  rating-form_input " id="colFormLabel" placeholder="Enter your email address">
+                                    </div>
+                                    <div class="col-sm-12  mb-2">
+                                        <input type="text" class="form-control  rating-form_input" id="colFormLabel" placeholder="Enter Subject">
+                                    </div>
+                                    <div class="col-sm-12  mb-2">
+                                        <textarea class="form-control different-control w-100  rating-form_input" name="textarea" id="textarea" cols="30" rows="5" placeholder="Enter Message"></textarea>
+                                    </div>
+                                    <div class="rating-form__button-container">
+                                        <button class=" header__buy-button get-update__button rating-form__button">Submit Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="trending-product pt-5 pb-5 mt-5" >
+        <div class="container">
+            <p class="trending-product__p">Popular Item in the market</p>
+
+            <h1 class="trending-product__head pb-5">Top <span> Product </span></h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5">
+        <div class="container mb-4">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer__our-mission">
+                        <h4>Our Mission</h4>
+                        <p class="pt-3">So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us lan Gathering thing us land years living.</p>
+
+                        <p> So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved</p>
+                    </div>
+
+                </div>
+                <div class="offset-lg-1 col-lg-2 col-md-4 offset-md-2 col-sm-4 col-sm-12 pb-5">
+                    <div class="footer__list">
+                    <h4>Quick Links</h4>
+                        <ul class="pt-3 Quick-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            
+                            <li><a href="contect.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6  col-sm-12" >
+                    <div class="footer__imgs">
+                        <h4>Gallery</h4>
+                        <ul class="footer__imgs-list pt-3">
+                            <li><img src="assest/images/footer1.webp"></li>
+                            <li><img src="assest/images/footer2.webp" alt=""></li>
+                            <li><img src="assest/images/footer3.webp" alt=""></li>
+                            <li><img src="assest/images/footer4.webp" alt=""></li>
+                            <li><img src="assest/images/footer5.webp" alt=""></li>
+                            <li><img src="assest/images/footer6.webp" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-lg-2 offset-lg-1  col-md-4 offset-md-2 col-sm-11 offset-sm-1 m-left-40">
+                    <div class="footer-social">
+                            <h4>Contact Us</h4>
+                                <p class="footer__hi"> <span class="fa fa-location-arrow"></span> Head Office</p>
+
+                                <p> 123, Main Street, Your City</p>
+                                <p class="footer__hi"><span class="fa fa-phone"></span> Phone Number
+
+                                <p> +123 456 7890<br /> +123 456 7890f</p>
+                                <p class="footer__hi"><span class="fa fa-envelope"></span>  Email </p>
+
+                                    <p>free@infoexample.com<br /> www.infoexample.com</p>
+
+                    </div>
+
+                </div>
+                
+            </div>    
+        </div>
+        <div class="footer-bottom pt-4 pb-3">
+            <div class="container">
+                <div class="row d-flex">
+                    <p class="col-lg-12 footer-text text-center">
+                    
+                    Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+    </footer>
+    <script src="/assest/OwlCarousel/jquery.min.js" ></script>
+    <script src="/assest/OwlCarousel/owl.carousel.js"></script>
+    <script src="/assest/nice-select-dropdown/nice-select-dropdown/src/script.js"></script>
+    <script src="/assest/OwlCarousel/owl.carousel.min.js"  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assest/js/bootstrap.min.js" ></script>
+    <script src="/assest/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assest/js/home.js"></script>
+    <script>
+           $(document).ready(function(){
+    
+    $('.product-item__img-container').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+
+        responsive:{
+            0:{
+                items:1
+            },
+            976:{
+                items:1
+            },
+            1024:{
+                items:1
+            },
+            1440:{
+                items:1
+            }
+        }
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA</title>
+    <link href="/assest/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assest/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assest/noUiSlider-15.6.0/noUiSlider-15.6.0/dist/nouislider.min.css">
+    <script src="/assest/noUiSlider-15.6.0/noUiSlider-15.6.0/dist/nouislider.js"></script>
+    <link rel="stylesheet" href="./assest/OwlCarousel/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/OwlCarousel/owl.theme.default.min.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/themify-icons/themify-icons.css">
+    <link href="/assest/css/home.css" rel="stylesheet" >
+   
+    <script type="text/javascript" src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js" async=""></script>
+</head>
+<body> 
+ 
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 ">
+        <div class="container">
+            <a class="navbar-brand " href="#">    <img src="/assest/images/logo.webp" alt="logo"></a>
+            <button class="navbar-toggler " type="button" onclick="sideNavbar('open')">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav__list">
+                    <li class="nav-item nav__item active">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Shop</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="shop.html">Shop Category</a>
+                            <a class="dropdown-item" href="product.html">Product Details</a>
+                            <a class="dropdown-item" href="check-out.html">Product Checkout</a>
+                            <a class="dropdown-item" href="confirm.html">Confirmation</a>
+                            <a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Blog</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="blog.html">Blog</a>
+                            <a class="dropdown-item" href="blog-details.html">Blog Details</a>
+                        
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Pages</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="resigter.html">Register</a>
+                            <a class="dropdown-item" href="tracking.html">Tracking</a>
+                        
+                        </div>
+                    </div>
+
+                    <li class="nav-item nav__item ">
+                        <a class="nav-link " href="contect.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class=" navbar-nav nav__list-shop ml-auto ">
+                    <li class="nav-item nav__item  ">
+                        <button class="btn nav__shop-button ">
+                            <svg data-src="/assest/images/search.svg"></svg>
+                        </button>
+                    </li>
+                    <li class="nav-item nav__item mr-5 ">
+                        <a href="shoppingCart.html" class="btn nav__shop-button  nav__cart">
+                            <svg data-src="/assest/images/cart.svg" ></svg>
+                            <span class="nav__note-span" >3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav__item ">
+                        <button class="btn nav__buy-button">
+                            Buy Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-toggle navbar-toggle-js">
+            <div class="nav-side">
+                <div class="side__close " >
+                    <button onclick="sideNavbar('close')" class="btn side__close-button side__close-button-js  "><svg class="side__close__svg" data-src="/assest/images/x.svg"></svg></button>
+                </div>
+                <ul class="nav-side__icon-list pt-2">  
+                    <li class="">
+                        <button class="btn nav__shop-button ">
+                            <svg data-src="/assest/images/search.svg"></svg>
+                        </button>
+                    </li>
+                    <li class="">
+                        <a href="shoppingCart.html" class="btn nav__shop-button  nav__cart">
+                            <svg data-src="/assest/images/cart.svg" ></svg>
+                            <span class="nav__note-span" >3</span>
+                        </a>
+                    </li>
+                    
+            
+                </ul>
+                <ul class="nav-side__list pt-3">
+                    <li><a href="index.html" >Home</a></li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#shop"  role="button" >
+                            Shop
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="shop" >
+                            <li>  <a class="dropdown-item " href="shop.html">Shop Category</a> </li>
+                            <li> <a class="dropdown-item" href="product.html">Product Details</a></li>
+                            <li> <a class="dropdown-item" href="check-out.html">Product Checkout</a></li>
+                            <li> <a class="dropdown-item" href="confirm.html">Confirmation</a></li>
+                            <li> <a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a></li>
+                        </ul>
+                    </li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#blog"  role="button" >
+                            Blog
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="blog" >
+                            <li>  <a class="dropdown-item " href="blog.html">Blog</a> </li>
+                            <li> <a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#pages"  role="button" >
+                            Pages
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="pages" >
+                            <li>  <a class="dropdown-item " href="login.html">Login</a> </li>
+                            <li> <a class="dropdown-item" href="resigter.html">Register</a></li>
+                            <li> <a class="dropdown-item" href="tracking.html">Tracking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contect.html">contact</a></li>
+                </ul> 
+                <div class="text-center">
+                    <button class="btn nav__buy-button nav-side__button">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+            <div class="other-side" onclick="sideNavbar('close')">
+            </div>
+        </div>
+    </nav>
+    <section class="header-shop ">
+        <div class="header-shop__content">
+        <h2>Shop Category</h2>
+        <p>Home -Shop Category</p>
+    </div>
+    </section>
+    <section class="shop-Categories pt-5 mt-5">
+        <div class="container">
+            <div class="row shop-Categories__row">
+                <div class="col-xlg-3 col-lg-3 col-md-4 col-sm-12 side-col">
+                    <div class="Browse-Categories__title">Browse Categories</div>
+                        <div class="Browse-Categories mb-4">
+                        
+                            <ul class="pt-3">
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Men (3600)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Women (3600)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Accessories (3600)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Footwear (3600)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Bay item (3600)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                        <label for="html">Electronics (3600)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                            <label for="html">Food (3600)</label></li>
+                            
+                            </ul>
+                        </div>
+                        <div class="Browse-Categories__title ">Product Filters</div>
+                        <div class="Browse-Categories pb-4">
+                            
+                            <div class="Product-Filters__header">Brands</div>
+                            <ul >
+                                <li><input  type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Apple(29)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Asus(29)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Gionee(19)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Micromax(19)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Samsung(19)</label></li>
+                            </ul>
+                            <hr>
+                            <div class="Product-Filters__header">Color</div>
+                            <ul>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Black(29)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Black Leather(29)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Black with red(19)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Gold(19)</label></li>
+                                <li><input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Spacegrey(19)</label></li>
+                            </ul>
+                            <hr>
+                            <ul>
+                            <div >Price</div>
+                            <div class="slider-limit__container pt-2" >
+                            <div id="slider-limit"></div>
+                            </div>
+                        </div>
+                    
+                </div>
+               
+                <div class="col-xlg-9 col-lg-9 col-md-8 col-sm-12  ">
+                    <div class="row ">
+                    <form class="form-nav">
+                        <div class="form-row align-items-center">
+                           
+                            <div class="form-group mb-0 col-lg-2 col-md-2 col-sm-3  mr-5 ">
+                                
+                                <select class="nice-select ">
+                                    <option data-display="Default sort">Nothing</option>
+                                    <option value="1">Some option</option>
+                                    <option value="2">Another option</option>
+                                    <option value="3" disabled>A disabled option</option>
+                                    <option value="4">Potato</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-0 col-lg-2 col-md-2 col-sm-2 ">
+                                <select class="nice-select nice-select-small">
+                                    <option data-display="Show 12">Nothing</option>
+                                    <option value="1">Some option</option>
+                                    <option value="2">Another option</option>
+                                    <option value="3" disabled>A disabled option</option>
+                                    <option value="4">Potato</option>
+                                </select>
+                            </div>
+                          <div class="col-lg-3 offset-lg-4 ">
+                            <div class="form-inline input-group ">
+                                <input class="form-control form-control-search" type="search" placeholder="Search" aria-label="Search">
+                                
+                                <button class=" shop-Categories__button" type="button"><i class="ti-search"></i></button> 
+                                    
+    
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="row mt-4">
+                <div class="col-xl-4 col-lg-4 col-md-6 ">
+                    <div class="card trending-product__card" >
+                            <div class="trending-product__card-image-div">
+                                <img src="/assest/images/tranding_product1.webp" class="card-img-top" alt="product1">
+                        
+                                <div class="trending-product__card-icons">
+                                    <ul class="trending-product__card-icons-list">
+                                        <li>
+                                            <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body text-center pt-3">
+                                <p class="card-title card-p">Accessories</p>
+                                <h5 class=" card-text">Quartz Belt Watch</h5>
+                                <span>$150.00</span>
+                            </div>
+                    </div>
+                </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 ">
+                <div class="card trending-product__card" >
+                        <div class="trending-product__card-image-div">
+                            <img src="/assest/images/tranding_product2.webp" class="card-img-top" alt="product1">
+                    
+                            <div class="trending-product__card-icons">
+                                <ul class="trending-product__card-icons-list">
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-center pt-3">
+                            <p class="card-title card-p">Accessories</p>
+                            <h5 class=" card-text">Women Freshwash</h5>
+                            <span>$150.00</span>
+                        </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-xl-4 col-lg-4 col-md-6 ">
+                <div class="card trending-product__card" >
+                        <div class="trending-product__card-image-div">
+                            <img src="/assest/images/tranding_product3.webp" class="card-img-top" alt="product1">
+                    
+                            <div class="trending-product__card-icons">
+                                <ul class="trending-product__card-icons-list">
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-center pt-3">
+                            <p class="card-title card-p">Accessories</p>
+                            <h5 class=" card-text">Room Flash Light</h5>
+                            <span>$150.00</span>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-4 col-md-6 pt-4">
+                <div class="card trending-product__card" >
+                        <div class="trending-product__card-image-div">
+                            <img src="/assest/images/tranding_product4.webp" class="card-img-top" alt="product1">
+                    
+                            <div class="trending-product__card-icons">
+                                <ul class="trending-product__card-icons-list">
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-center pt-3">
+                            <p class="card-title card-p">Accessories</p>
+                            <h5 class=" card-text">Quartz Belt Watch</h5>
+                            <span>$150.00</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 pt-4 ">
+                <div class="card trending-product__card" >
+                        <div class="trending-product__card-image-div">
+                            <img src="/assest/images/tranding_product5.webp" class="card-img-top" alt="product1">
+                    
+                            <div class="trending-product__card-icons">
+                                <ul class="trending-product__card-icons-list">
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-center pt-3">
+                            <p class="card-title card-p">Accessories</p>
+                            <h5 class=" card-text">Quartz Belt Watch</h5>
+                            <span>$150.00</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 pt-4 ">
+                <div class="card trending-product__card" >
+                        <div class="trending-product__card-image-div">
+                            <img src="/assest/images/tranding_product6.webp" class="card-img-top" alt="product1">
+                    
+                            <div class="trending-product__card-icons">
+                                <ul class="trending-product__card-icons-list">
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-center pt-3">
+                            <p class="card-title card-p">Accessories</p>
+                            <h5 class=" card-text">Quartz Belt Watch</h5>
+                            <span>$150.00</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 pt-4 ">
+                <div class="card trending-product__card" >
+                        <div class="trending-product__card-image-div">
+                            <img src="/assest/images/tranding_product7.webp" class="card-img-top" alt="product1">
+                    
+                            <div class="trending-product__card-icons">
+                                <ul class="trending-product__card-icons-list">
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-center pt-3">
+                            <p class="card-title card-p">Accessories</p>
+                            <h5 class=" card-text">Quartz Belt Watch</h5>
+                            <span>$150.00</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 pt-4">
+                <div class="card trending-product__card" >
+                        <div class="trending-product__card-image-div">
+                            <img src="/assest/images/tranding_product8.webp" class="card-img-top" alt="product1">
+                    
+                            <div class="trending-product__card-icons">
+                                <ul class="trending-product__card-icons-list">
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button "> <i class="ti-search"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">  <i class="ti-shopping-cart"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="btn trending-product__card-icons-button">   <i class="ti-heart"></i></button>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-center pt-3">
+                            <p class="card-title card-p">Accessories</p>
+                            <h5 class=" card-text">Quartz Belt Watch</h5>
+                            <span>$150.00</span>
+                        </div>
+                </div>
+            </div>
+            </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <section class="trending-product pt-5 pb-5 mt-5" >
+        <div class="container">
+            <p class="trending-product__p">Popular Item in the market</p>
+
+            <h1 class="trending-product__head pb-5">Top <span> Product </span></h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="trending-product__container mt-4 ">
+                            <div class="trending-product__item d-flex pt-3">
+                                <a><img src="/assest/images/top1.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3">
+                                <a><img src="/assest/images/top2.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                            <div class="trending-product__item d-flex pt-4 mt-3 pb-2">
+                                <a><img src="/assest/images/top3.webp"></a>
+                                <div class="ml-3 trending-product__item__info mt-1">
+                                    <a>Gray Coffee Cup</a>
+                                    <div class="trending-product__item__price">$170.00</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-update pt-2" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="get-update__container shadow ">
+                            <div class="get-update__content m-auto ">
+                                <h2>GET UPDATE FROM ANYWHERE</h2>
+                                <p>Bearing Void gathering light light his eavening unto dont afraid</p>
+                                <form class="form-group get-update__form-group d-flex ml-sm-auto">
+                                <input  class="form-control  get-update__input mr-2 " placeholder=" Your Email Address" type="text" >
+                                <button class="btn header__buy-button get-update__button ">Subscribe Now</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>  
+
+    <footer class="footer">
+        <div class="container mb-4">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer__our-mission">
+                        <h4>Our Mission</h4>
+                        <p class="pt-3">So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us lan Gathering thing us land years living.</p>
+
+                        <p> So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved</p>
+                    </div>
+
+                </div>
+                <div class="offset-lg-1 col-lg-2 col-md-4 offset-md-2 col-sm-4 col-sm-12 pb-5">
+                    <div class="footer__list">
+                    <h4>Quick Links</h4>
+                    <ul class="pt-3 Quick-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        
+                        <li><a href="contect.html">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6  col-sm-12" >
+                    <div class="footer__imgs">
+                        <h4>Gallery</h4>
+                        <ul class="footer__imgs-list pt-3">
+                            <li><img src="assest/images/footer1.webp"></li>
+                            <li><img src="assest/images/footer2.webp" alt=""></li>
+                            <li><img src="assest/images/footer3.webp" alt=""></li>
+                            <li><img src="assest/images/footer4.webp" alt=""></li>
+                            <li><img src="assest/images/footer5.webp" alt=""></li>
+                            <li><img src="assest/images/footer6.webp" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-lg-2 offset-lg-1  col-md-4 offset-md-2 col-sm-11 offset-sm-1 m-left-40">
+                    <div class="footer-social">
+                            <h4>Contact Us</h4>
+                                <p class="footer__hi"> <span class="fa fa-location-arrow"></span> Head Office</p>
+
+                                <p> 123, Main Street, Your City</p>
+                                <p class="footer__hi"><span class="fa fa-phone"></span> Phone Number
+
+                                <p> +123 456 7890<br /> +123 456 7890f</p>
+                                <p class="footer__hi"><span class="fa fa-envelope"></span>  Email </p>
+
+                                    <p>free@infoexample.com<br /> www.infoexample.com</p>
+
+                    </div>
+
+                </div>
+                
+            </div>    
+        </div>
+        <div class="footer-bottom pt-4 pb-3">
+            <div class="container">
+                <div class="row d-flex">
+                    <p class="col-lg-12 footer-text text-center">
+                    
+                    Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+    </footer>
+    
+    
+    <script src="/assest/OwlCarousel/jquery.min.js" ></script>
+    <script src="/assest/OwlCarousel/owl.carousel.js"></script>
+    <script src="/assest/nice-select-dropdown/nice-select-dropdown/src/script.js"></script>
+    <script src="/assest/OwlCarousel/owl.carousel.min.js"  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assest/js/bootstrap.min.js" ></script>
+    <script src="/assest/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assest/js/home.js"></script>
+    <script>
+        var limitSlider = document.getElementById('slider-limit');
+
+noUiSlider.create(limitSlider, {
+    start: [10, 120],
+    limit: 200,
+    behaviour: 'drag',
+    connect: true,
+    range: {
+        'min': 0,
+        
+        'max': 200
+    }
+});
+    </script>
+</body>
+</html>

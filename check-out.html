@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA</title>
+    <link href="/assest/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assest/css/all.min.css" rel="stylesheet">
+    <link href="/assest/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assest/noUiSlider-15.6.0/noUiSlider-15.6.0/dist/nouislider.min.css">
+    <script src="/assest/noUiSlider-15.6.0/noUiSlider-15.6.0/dist/nouislider.js"></script>
+    <link rel="stylesheet" href="./assest/OwlCarousel/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/OwlCarousel/owl.theme.default.min.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/themify-icons/themify-icons.css">
+    <link href="/assest/css/home.css" rel="stylesheet" >
+    <script type="text/javascript" src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js" async=""></script>
+</head>
+<body class="mx-0"> 
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 ">
+        <div class="container">
+            <a class="navbar-brand " href="#">    <img src="/assest/images/logo.webp" alt="logo"></a>
+            <button class="navbar-toggler " type="button" onclick="sideNavbar('open')">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav__list">
+                    <li class="nav-item nav__item active">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Shop</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="shop.html">Shop Category</a>
+                            <a class="dropdown-item" href="product.html">Product Details</a>
+                            <a class="dropdown-item" href="check-out.html">Product Checkout</a>
+                            <a class="dropdown-item" href="confirm.html">Confirmation</a>
+                            <a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Blog</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="blog.html">Blog</a>
+                            <a class="dropdown-item" href="blog-details.html">Blog Details</a>
+                        
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+        
+                        <li  class="nav-item nav__item nav__shop-dropdown" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#">Pages</a>
+                        </li>
+                        <div class="dropdown-menu show nav__dropdown-list">
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="resigter.html">Register</a>
+                            <a class="dropdown-item" href="tracking.html">Tracking</a>
+                        
+                        </div>
+                    </div>
+
+                    <li class="nav-item nav__item ">
+                        <a class="nav-link " href="contect.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class=" navbar-nav nav__list-shop ml-auto ">
+                    <li class="nav-item nav__item  ">
+                        <button class="btn nav__shop-button ">
+                            <svg data-src="/assest/images/search.svg"></svg>
+                        </button>
+                    </li>
+                    <li class="nav-item nav__item mr-5 ">
+                        <a href="shoppingCart.html" class="btn nav__shop-button  nav__cart">
+                            <svg data-src="/assest/images/cart.svg" ></svg>
+                            <span class="nav__note-span" >3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav__item ">
+                        <button class="btn nav__buy-button">
+                            Buy Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-toggle navbar-toggle-js">
+            <div class="nav-side">
+                <div class="side__close " >
+                    <button onclick="sideNavbar('close')" class="btn side__close-button side__close-button-js  "><svg class="side__close__svg" data-src="/assest/images/x.svg"></svg></button>
+                </div>
+                <ul class="nav-side__icon-list pt-2">  
+                    <li class="">
+                        <button class="btn nav__shop-button ">
+                            <svg data-src="/assest/images/search.svg"></svg>
+                        </button>
+                    </li>
+                    <li class="">
+                        <a href="shoppingCart.html" class="btn nav__shop-button  nav__cart">
+                            <svg data-src="/assest/images/cart.svg" ></svg>
+                            <span class="nav__note-span" >3</span>
+                        </a>
+                    </li>
+                    
+            
+                </ul>
+                <ul class="nav-side__list pt-3">
+                    <li><a href="index.html" >Home</a></li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#shop"  role="button" >
+                            Shop
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="shop" >
+                            <li>  <a class="dropdown-item " href="shop.html">Shop Category</a> </li>
+                            <li> <a class="dropdown-item" href="product.html">Product Details</a></li>
+                            <li> <a class="dropdown-item" href="check-out.html">Product Checkout</a></li>
+                            <li> <a class="dropdown-item" href="confirm.html">Confirmation</a></li>
+                            <li> <a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a></li>
+                        </ul>
+                    </li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#blog"  role="button" >
+                            Blog
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="blog" >
+                            <li>  <a class="dropdown-item " href="blog.html">Blog</a> </li>
+                            <li> <a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li>  
+                        <a class=" " href="#" data-toggle="collapse" data-target="#pages"  role="button" >
+                            Pages
+                        </a>
+                        <ul class=" nav-side_dropdown  collapse" id="pages" >
+                            <li>  <a class="dropdown-item " href="login.html">Login</a> </li>
+                            <li> <a class="dropdown-item" href="resigter.html">Register</a></li>
+                            <li> <a class="dropdown-item" href="tracking.html">Tracking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contect.html">contact</a></li>
+                </ul> 
+                <div class="text-center">
+                    <button class="btn nav__buy-button nav-side__button">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+            <div class="other-side" onclick="sideNavbar('close')">
+            </div>
+        </div>
+    </nav>
+    <section class="header-shop ">
+        <div class="header-shop__content">
+            <h2>Product Checkout</h2>
+            <p>Home-Checkout</p>
+        </div>
+    </section>
+    <section class="Checkout" >
+        <div class="container">
+            <div class="row">
+                <div class="Checkout__nav" >
+                    <p>Returning Customer?
+                        <a href="#">Click here to login</a>
+                    </p>
+                </div>
+                <p class="Checkout__paragraph">If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+                <form class="Checkout__form-login pl-1 " >
+                    <div class="form-row pl-4">
+                        <div class="form-group col-lg-5">
+                        
+                            <input type="email" class="form-control Checkout__form-login_input" id="inputEmail4" placeholder="Username or Email*">
+                        </div>
+                        <div class="form-group col-lg-5 ml-lg-3">
+                        
+                            <input type="password" class="form-control form-control Checkout__form-login_input" id="inputPassword4" placeholder="Password*">
+                            
+                        </div>
+                        <button class="btn Checkout__form-login-button ">Login</button>
+                        <div class="Checkout__checkbox mt-3">
+                            <input type="checkbox" id="f-option" name="selector">
+                            <label for="f-option">Remember me</label>
+                        </div>
+                        
+                    </div>
+                    <a class="Checkout__link " href="">Lost your password?</a>
+
+                </form>
+                <div class="Checkout__nav mt-4" >
+                    <p>Have a coupon?
+                        <a href="#">Click here to enter your code</a>
+                    </p>
+                </div>
+                <div class="form-group form-group__coupon mt-4">
+                        
+                    <input type="email" class="form-control Checkout__form-login_input ml-4" id="inputEmail4" placeholder="Enter coupon code">
+                </div>
+                <div class="coupon-button-container">
+                <button class="btn header__buy-button get-update__button ">Add to Card</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="billing-details pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3>Billing Details</h3>
+                    <form class="row contact-form" action="#" method="post" novalidate="">
+                        <div class="col-md-6 form-group ">
+                            <input type="text" class="form-control Checkout__form-login_input" id="first" name="name">
+    
+                        </div>
+                        <div class="col-md-6 form-group ">
+                            <input type="text" class="form-control Checkout__form-login_input" id="last" name="name">
+                
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control Checkout__form-login_input"  id="company" name="company" placeholder="Company name">
+                        </div>
+                        <div class="col-md-6 form-group ">
+                            <input type="text" class="form-control Checkout__form-login_input" id="number" name="number">
+                        
+                        </div>
+                        <div class="col-md-6 form-group ">
+                            <input type="text" class="form-control Checkout__form-login_input" id="Email" name="Email">
+                    
+                        </div>
+                        <div class="form-group col-md-12   ">
+                                
+                            <select class="nice-select nice-select-edit ">
+                                <option data-display="country">Nothing</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Another option</option>
+                                <option value="3" disabled>A disabled option</option>
+                                <option value="4">Potato</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 form-group p_star">
+                            <input type="text" class="form-control Checkout__form-login_input" id="add1" name="add1">
+                            <span class="placeholder" data-placeholder="Address line 01"></span>
+                        </div>
+                        <div class="col-md-12 form-group ">
+                            <input type="text" class="form-control Checkout__form-login_input" id="add2" name="add2">
+                        
+                        </div>
+                        <div class="col-md-12 form-group p_star">
+                            <input type="text" class="form-control Checkout__form-login_input" id="city" name="city">
+                        
+                        </div>
+                        <div class="form-group col-md-12   ">
+                                
+                            <select class="nice-select nice-select-edit ">
+                                <option data-display="District">Nothing</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Another option</option>
+                                <option value="3" disabled>A disabled option</option>
+                                <option value="4">Potato</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 form-group  ">
+                            <input type="text" class="form-control Checkout__form-login_input" id="zip" name="zip" placeholder="Postcode/ZIP">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <div class="Checkout__checkbox ml-0 mt-3 ">
+                                <input type="checkbox" id="option" name="selector">
+                                <label for="option"> Create an account?</label>
+                            </div>
+                        </div>
+                    <div class="col-md-12 form-group mb-0">
+                    <div class="creat_account">
+                        <h3>Shipping Details</h3>
+                    
+                        <div class="Checkout__checkbox ml-0 mb-3">
+                            <input type="checkbox" id="option" name="selector">
+                            <label for="option">Ship to a different address?</label>
+                        </div>
+                    </div>  
+                    <textarea class="form-control textarea-bill " name="message" id="message" rows="1" placeholder="Order Notes"></textarea>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="your-bill ">
+                        <h2>Your Order</h2>
+                        <ul class="your-bill__list">
+                            <li><a href="#"><h4>Product <span>Total</span></h4></a></li>
+                            <li><a href="#">Fresh Blackberry <span class="middle">x 02</span> <span class="last">$720.00</span></a></li>
+                            <li><a href="#">Fresh Tomatoes <span class="middle">x 02</span> <span class="last">$720.00</span></a></li>
+                            <li><a href="#">Fresh Brocoli <span class="middle">x 02</span> <span class="last">$720.00</span></a></li>
+                        </ul>
+                        <ul class="your-bill__list your-bill__list2 ">
+                            <li><a href="#">Subtotal <span>$2160.00</span></a></li>
+                            <li><a href="#">Shipping <span>Flat rate: $50.00</span></a></li>
+                            <li><a href="#">Total <span class="text-black">$2210.00</span></a></li>
+                        </ul>
+                        <div class="way-pay">
+                            
+                            <label class="label-radio">Check Payments
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                            <label class="label-radio">Paypal <img src="/assest/images/pay.webp">
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal
+                                account.</p>
+                            
+
+                        </div>
+                        <div class="Checkout__checkbox pay-check ml-0 mb-3 ">
+                            <input type="checkbox" class="text-black" id="option" name="selector">
+                            <label class="checkbox-label" for="option">I’ve read and accept the <a href="">terms & conditions*</a></label>
+                        </div>
+                        <div class="text-center">
+                            <a class="button  way-pay__button " href="Payment.html">Proceed to Paypal</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer mt-5">
+        <div class="container mb-4">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer__our-mission">
+                        <h4>Our Mission</h4>
+                        <p class="pt-3">So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us lan Gathering thing us land years living.</p>
+
+                        <p> So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved</p>
+                    </div>
+
+                </div>
+                <div class="offset-lg-1 col-lg-2 col-md-4 offset-md-2 col-sm-4 col-sm-12 pb-5">
+                    <div class="footer__list">
+                    <h4>Quick Links</h4>
+                        <ul class="pt-3 Quick-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            
+                            <li><a href="contect.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6  col-sm-12" >
+                    <div class="footer__imgs">
+                        <h4>Gallery</h4>
+                        <ul class="footer__imgs-list pt-3">
+                            <li><img src="assest/images/footer1.webp"></li>
+                            <li><img src="assest/images/footer2.webp" alt=""></li>
+                            <li><img src="assest/images/footer3.webp" alt=""></li>
+                            <li><img src="assest/images/footer4.webp" alt=""></li>
+                            <li><img src="assest/images/footer5.webp" alt=""></li>
+                            <li><img src="assest/images/footer6.webp" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-lg-2 offset-lg-1  col-md-4 offset-md-2 col-sm-11 offset-sm-1 m-left-40">
+                    <div class="footer-social">
+                            <h4>Contact Us</h4>
+                                <p class="footer__hi"> <span class="fa fa-location-arrow"></span> Head Office</p>
+
+                                <p> 123, Main Street, Your City</p>
+                                <p class="footer__hi"><span class="fa fa-phone"></span> Phone Number
+
+                                <p> +123 456 7890<br /> +123 456 7890f</p>
+                                <p class="footer__hi"><span class="fa fa-envelope"></span>  Email </p>
+
+                                    <p>free@infoexample.com<br /> www.infoexample.com</p>
+
+                    </div>
+
+                </div>
+                
+            </div>    
+        </div>
+        <div class="footer-bottom pt-4 pb-3">
+            <div class="container">
+                <div class="row d-flex">
+                    <p class="col-lg-12 footer-text text-center">
+                    
+                    Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+    </footer>
+    <script src="/assest/OwlCarousel/jquery.min.js" ></script>
+    <script src="/assest/OwlCarousel/owl.carousel.js"></script>
+    <script src="/assest/nice-select-dropdown/nice-select-dropdown/src/script.js"></script>
+    <script src="/assest/OwlCarousel/owl.carousel.min.js"  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assest/js/bootstrap.min.js" ></script>
+    <script src="/assest/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assest/js/home.js"></script>
+    </body>
+</html>
